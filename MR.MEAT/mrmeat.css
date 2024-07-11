@@ -1,0 +1,16 @@
+h1.heading{
+    font-family: 'Heading-Font',sans-serif;
+    background-color: chartreuse;
+    text-align: center;
+    font-size: 100px;
+    color: orange;
+    text-shadow: 6px 0px 0px black;
+    padding: 30px 30px 30px 30px;
+    margin: 0px;
+}
+@font-face {
+    font-family:'Heading-Font' ;
+    src: url('Copyduck.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
