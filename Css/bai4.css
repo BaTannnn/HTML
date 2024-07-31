@@ -1,0 +1,62 @@
+@font-face {
+    font-family:font MC;
+    src: url(MinecraftTen-VGORe.ttf);
+}
+.flex{
+    text-transform: uppercase;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.ads>div{
+    font-family: font MC;
+    text-transform: uppercase;
+    padding: 30px;
+    border: 2px dashed blue;
+}
+
+header>div>img{
+    width:120px
+}
+/*CSS body*/
+main{
+    font-family: font MC;
+}
+.top{
+    border: 2px solid black;
+    display:flex;
+    background-color: #00AAAA;
+}
+ul.menu{
+    list-style-type: none;
+    display:flex;
+    margin:0;
+    padding:0;
+}
+ul.menu >li{
+    border: 1px solid black;
+}
+ul.menu >li:last-child{
+    margin-left: auto;
+}
+ul.menu > li>a{
+    text-decoration: none;
+    display:block;
+    padding:1em;
+}
+ul.menu >li>a:hover{
+    background-color: #0000FF;
+    color: white;
+}.submenu{
+    display: none !important;
+    position:absolute;
+}
+.item:hover .submenu{
+    display: block !important;;
+}
+.left{
+    width: 20%;
+}
+.right{
+    width:80%;
+}
