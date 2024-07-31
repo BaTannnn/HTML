@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <style>
+        h1 {
+            background-color: lightgreen;
+            color: blue !important;
+        }
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width:500px)" />
+    <script>
+        console.info("INFO " + Math.random());
+        console.log("LOG " + Math.random());
+        console.error("ERROR " + Math.random());
+        console.table(["a", "b", "c"]);
+        console.table({"a": 1, "b": 10, "c": 5});
+    </script>
+</head>
+<body id="body">
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <div id="game">
+        <img src="images/ball.png" alt="" id="ball">
+    </div>
+    <h1 id="clock">00:00:00</h1>
+    <div class="pro">
+        <img id="main" src="images/galaxys8/Blue_1.jpg" />
+        <div class="thumb">
+            <div><img src="images/galaxys8/Blue_1.jpg" alt=""></div>
+            <div><img src="images/galaxys8/Blue_2.jpg" alt=""></div>
+            <div><img src="images/galaxys8/Blue_3.jpg" alt=""></div>
+            <div><img src="images/galaxys8/Blue_4.jpg" alt=""></div>
+            <div><img src="images/galaxys8/Blue_5.jpg" alt=""></div>
+        </div>
+    </div>
+    <input onchange="doiMau(this)" type="text" placeholder="Nhap ten mau..." />
+    <h1>ax + b = 0</h1>
+    <table>
+        <tr>
+            <td>a = </td>
+            <td>
+                <input type="number" id="aId" />
+            </td>
+        </tr>
+        <tr>
+            <td>b = </td>
+            <td>
+                <input type="number" id="bId" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input onclick="giaiBac1()" type="button" value="Giai" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" id="result">...</td>
+        </tr>
+    </table>
+    <button onclick="x = prompt('Your name = '); alert('Hello ' + x)">CLICK ME!</button>
+    <picture>
+        <source srcset="images/icon.png" media="(max-width: 500px)" />
+        <source srcset="images/car.png" media="(max-width: 800px)" />
+        <img width="120px" src="images/logo.png" alt="logo" />
+    </picture>
+    <div class="parent">
+        <h1 class="title">TEST</h1>
+    </div>
+    <a class="go" href="#">GO TO TOP</a>
+   <div class="products">
+    <div class="product animate__animated animate__flipInY animate__infinite">
+        <img src="images/iphone.jpg" alt="iPhone" />
+        <h3>iPhone 15</h3>
+        <p>25.000.000 VNĐ</p>
+        <p class="promo">SALE OFF 20%</p>
+    </div>
+    <div class="product">
+        <div>
+            <img src="images/iphone.jpg" alt="iPhone" />
+            <h3 style="color: red;">iPhone 15</h3>
+            <p>25.000.000 VNĐ</p>
+        </div>
+    </div>
+    <div class="product">
+        <img src="images/iphone.jpg" alt="iPhone" />
+        <h3 style="color: green">iPhone 15</h3>
+        <p>25.000.000 VNĐ</p>
+    </div>
+    <div class="product">
+        <img src="images/iphone.jpg" alt="iPhone" />
+        <h3>iPhone 15</h3>
+        <p>25.000.000 VNĐ</p>
+    </div>
+    <div class="product">
+        <img src="images/iphone.jpg" alt="iPhone" />
+        <h3>iPhone 15</h3>
+        <p>25.000.000 VNĐ</p>
+    </div>
+   </div>
+
+    <div style="overflow: auto">
+        <img class="f" width="80" src="images/Logo_DH_Mở_TPHCM.png" />
+        <div class="test">Theo đơn khởi kiện, giữa năm 2022</div>
+    </div>
+    
+    <h1>
+        <a href="http://ou.edu.vn/">HCMCOU</a>
+    </h1>
+    <table class="t" border="1">
+        <tr>
+            <td>ITEM0001</td>
+            <td>ITEM0002</td>
+        </tr>
+        <tr>
+            <td>ITEM0001</td>
+            <td>ITEM0002</td>
+        </tr>
+        <tr>
+            <td>ITEM0001</td>
+            <td>ITEM0002</td>
+        </tr>
+        <tr>
+            <td>ITEM0001</td>
+            <td>ITEM0002</td>
+        </tr>
+        <tr>
+            <td>ITEM0001</td>
+            <td>ITEM0002</td>
+        </tr>
+        <tr>
+            <td>ITEM0001</td>
+            <td>ITEM0002</td>
+        </tr>
+    </table>
+    <ul>
+        <li>ITEM0001</li>
+        <li>ITEM0002</li>
+        <li>ITEM0003</li>
+        <li>ITEM0004</li>
+        <li>ITEM0005</li>
+    </ul>
+    <h1 class="subject">WEB DESIGN</h1>
+    <div class="test"></div>
+    <h1 style="color: red;">CSS DEMO</h1>
+    <!-- <iframe width="400" height="294" src="https://www.youtube.com/embed/Spi6MywqJlg" title="Sử dụng Word2Vec cơ bản để vector hoá văn bản" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4562104622023!2d106.6902291!3d10.776328399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3ae35e3725%3A0x20c5174a47f97be3!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBN4bufIFRQLkhDTSAtIEPGoSBz4bufIDE!5e0!3m2!1svi!2s!4v1719477450094!5m2!1svi!2s" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    <form method="" action="">
+    <table>
+        <tr>
+            <td>Input</td>
+            <td>
+                <input type="text" placeholder="username=" required />
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="email" placeholder="username=" required />
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td>
+                <input type="password"  />
+            </td>
+        </tr>
+        <tr>
+            <td>Calendar</td>
+            <td>
+                <input type="datetime-local"  />
+            </td>
+        </tr>
+        <tr>
+            <td>Month</td>
+            <td>
+                <input type="month"  />
+            </td>
+        </tr>
+        <tr>
+            <td>Color</td>
+            <td>
+                <input type="color"  />
+            </td>
+        </tr>
+        <tr>
+            <td>Range</td>
+            <td>
+                <input min="0" max="100" type="range"  />
+            </td>
+        </tr>
+        <tr>
+            <td>Radio Buttons</td>
+            <td>
+                <input type="radio" name="demo"  /> A1
+                <input type="radio" name="demo"  /> A2
+                <input type="radio" name="demo" checked  /> A3
+            </td>
+        </tr>
+        <tr>
+            <td>Checkbox</td>
+            <td>
+                <input type="checkbox" name="demo"  /> A1
+                <input type="checkbox" name="demo"  /> A2
+                <input type="checkbox" name="demo" checked  /> A3
+            </td>
+        </tr>
+        <tr>
+            <td>Select</td>
+            <td>
+                <select>
+                    <optgroup label="CHAU A">
+                        <option>Viet Nam</option>
+                        <option>Thai Lan</option>
+                    </optgroup>
+                    <optgroup label="CHAU MY">
+                        <option selected>Hoa Ky</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Datalist</td>
+            <td>
+                <label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>ListBox</td>
+            <td>
+                <select multiple>
+                    <optgroup label="CHAU A">
+                        <option>Viet Nam</option>
+                        <option>Thai Lan</option>
+                    </optgroup>
+                    <optgroup label="CHAU MY">
+                        <option selected>Hoa Ky</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="SUBMIT" />
+                <button type="submit">&#128513; SUBMIT</button>
+                <input type="reset" value="RESET" />
+            </td>
+        </tr>
+    </table>
+    <table width="100%" border="1">
+        <thead style="background-color: blue; color: white;">
+            <tr>
+                <td rowspan="2">ITEM0001</td>
+                <td rowspan="2">ITEM0002</td>
+                <td colspan="2">ITEM0003</td>
+                <!-- <td>ITEM0004</td> -->
+            </tr>
+            <tr>
+                <!-- <td>ITEM0001</td> -->
+                <!-- <td>ITEM0002</td> -->
+                <td>ITEM0003</td>
+                <td>ITEM0004</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">IT &copy; 2024</td>
+            </tr>
+        </tfoot>
+        <tbody style="background-color: red; color: antiquewhite;">
+            <tr>
+                <td>ITEM0001</td>
+                <td>ITEM0002</td>
+                <td>ITEM0003</td>
+                <td>ITEM0004</td>
+            </tr>
+            <tr>
+                <td>ITEM0001</td>
+                <td>ITEM0002</td>
+                <td>ITEM0003</td>
+                <td>ITEM0004</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table cellpadding="10" cellspacing="10" border="2">
+        <tr>
+            <th>STT</th>
+            <th>Ten</th>
+            <th>Diem</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>NVA</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>TTB</td>
+            <td>8</td>
+        </tr>
+    </table>
+    </form>
+    <a href="https://ou.edu.vn/">
+        <img width="200" src="images/Logo_DH_Mở_TPHCM.png" alt="HCMCOU" />
+    </a>
+    <h1>
+        <a target="_blank" href="https://ou.edu.vn/">HCMCOU</a>
+    </h1>
+    <h1>ITEM01</h1>
+    <h1>ITEM02</h1>
+    <h1 id="demo" style="color: red;">ITEM03</h1>
+    <h1>ITEM04</h1>
+    <h1>ITEM05</h1>
+    <h1>ITEM06</h1>
+    <h1>ITEM07</h1>
+    <h1>ITEM08</h1>
+    <h1>ITEM09</h1>
+    <h1>ITEM10</h1>
+    <a href="#demo">GO TO 03</a>
+    <a href="mailto:thanh.dh@ou.edu.vn?subject=reply&body=good">CONTACT WITH ME</a>
+    <script src="js/script.js"></script>
+    <script>
+        //...
+    </script>
+</body>
+</html>

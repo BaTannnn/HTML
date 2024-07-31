@@ -1,0 +1,242 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/VNI-Ongdo.ttf);
+}
+
+h1.subject {
+    font-family: myFont;
+    padding: 25px;
+    border: 10px dashed red;
+    border-radius: 50px 0;
+    outline: 10px dotted green;
+    margin-left: -200px;
+}
+
+h1 {
+    font-style: italic;
+}
+
+body {
+    background-image: url("../images/car.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+/* div.test {
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(blue, white, red, gold);
+    border-radius: 50%;
+} */
+
+ul {
+    list-style-image: url(../images/icon.png);
+}
+
+table.t tr:nth-child(even) {
+    background-color: lightgreen;
+}
+
+table.t tr:nth-child(odd) {
+    background-color: gold;
+}
+
+table.t tr:first-child {
+    background-color: bisque;
+}
+
+table.t tr:last-child {
+    background-color: aquamarine;
+}
+
+table.t tr:nth-child(4) {
+    background-color: darkblue;
+    color: white;
+}
+
+table.t tr:hover {
+    background-color: red;
+    color: gold;
+}
+
+a:link {
+    color: green;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    color: red;
+}
+
+div.test {
+    background-color: lightgreen;
+    /* width: 200px;
+    height: 200px;
+    overflow: auto; */
+}
+
+img.f {
+    /* float: left; */
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+div.products {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgrey;
+    height: 500px;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: row-reverse; */
+}
+
+div.product {
+    width: 24%;
+    border: 2px solid blue;
+    border-radius: 10px;
+    padding: 0.5%;
+    margin: 0.5%;
+    box-sizing: border-box;
+    /* display: inline-block; */
+    /* float: left; */
+    position: relative;
+}
+
+div.product:nth-child(1) {
+    background-color: limegreen;
+}
+
+div.product:nth-child(2) {
+    background-color: lightgoldenrodyellow;
+    align-self: flex-start;
+}
+
+div.product:nth-child(3) {
+    background-color: lightseagreen;
+}
+
+div.product:nth-child(4) {
+    background-color: lightcoral;
+}
+
+div.product:nth-child(5) {
+    background-color: lightcyan;
+}
+
+div.product img {
+    width: 100%;
+    transition: transform .5s;
+    transition-delay: 1s;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+div.product img:hover {
+    transform: rotate(30deg);
+}
+
+a.go {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    width: 120px;
+    padding: 5px;
+    right: 10px;
+    bottom: 10px;
+    position: fixed;
+
+}
+
+.promo {
+    background-color: rgba(255, 0, 0, 0.7);
+    width: 120px;
+    padding: 5px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin: 0;
+    border-radius: 0 10px;
+    animation: doimau 5s infinite;
+}
+
+@keyframes doimau {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: gold;
+    }
+
+    50% {
+        background-color: bisque;
+    }
+
+    80% {
+        background-color: blue;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
+    body {
+        background-color: beige;
+    }
+
+    div.product {
+        width: 49%;
+    }
+} */
+
+html {
+    font-size: 8px;
+}
+
+div.parent {
+    font-size: 20px;
+}
+
+h1.title {
+    font-size: 3em;
+}
+
+.pro {
+    width: 30%;
+}
+
+.thumb {
+    display: flex;
+}
+
+.thumb>div {
+    width: 20%;
+}
+
+.pro img {
+    width: 100%;
+}
+
+#game {
+    width: 600px;
+    height: 300px;
+    background-color: gray;
+    position: relative;
+}
+
+#ball {
+    width: 80px;
+    position: absolute;
+}
