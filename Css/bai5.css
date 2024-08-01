@@ -1,0 +1,88 @@
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+nav{
+    background-color: darkcyan;
+    padding:0%
+}
+ul.menu{
+    padding:0;
+    margin:0;
+}
+ul.menu>li{
+    text-decoration: none;
+    list-style-type: none;
+}
+ul.menu:first-child>li{
+    border-left:1px solid white;
+}
+ul.menu>li>a{
+    display:inline-block;
+    padding:1.5rem;
+    text-decoration: none;
+}
+ul.menu>li>a:hover{
+    background-color: darkblue;
+    color:white;
+}
+header{
+    background: linear-gradient(180deg,#020024,#020024,#00d4ff);
+}
+header>h1{
+    color:white;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 3px white ;
+}
+.forum>img{
+    width:120px;
+    border-radius: 50%;
+}
+
+.course{
+    width:70%;
+    margin:auto;
+}
+h2.title{
+    background-color: blue;
+    padding:1rem;
+    margin-bottom: 0;
+    color:white;
+    border-radius: 10px 10px 0 0;
+}
+.forum{
+    background-color:cyan;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+.forums >.forum:last-child{
+    border-radius: 0 0 10px 10px ;
+}
+.ads > div{
+    width:14%;
+    padding :10rem 0;
+    text-align: center;
+    position:fixed;
+    background-color: blue;
+}
+.ads>div>a{
+    color:white;
+    text-decoration:none;
+    font-size: 24px;
+}
+.ads >div:first-child{
+    left:0.5%
+}
+.ads >div:last-child{
+    right:0.5%
+}
+footer{
+    background-color:#87c5fe;
+}
+footer>ul>li{
+    list-style-type: none;
+}
+footer>img{
+    width:500px;
+    height:120px
+}
