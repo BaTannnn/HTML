@@ -1,0 +1,23 @@
+.ads{
+    display:none;
+}
+.course{
+    width: 100%;
+}
+.flex{
+    flex-direction: column;
+    align-items: initial;
+}
+ul.menu:first-child>li{
+    border-left: none;
+}
+.flex.forum, .forum .flex{
+    align-items: center;
+    max-width: 100%;
+}
+ul.menu>li>a.submenu{
+    display: none;
+}
+ul.menu>li>a.home:hover a.submenu{
+    display: block !important;
+}
