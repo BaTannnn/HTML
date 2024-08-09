@@ -46,7 +46,7 @@ ul.menu > li>a{
 }
 ul.menu >li>a:hover{
     background-color: #0000FF;
-    color: white;
+    color: black;
 }.submenu{
     display: none !important;
     position:absolute;
